@@ -230,12 +230,10 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [_buildCell(6), _buildCell(7), _buildCell(8)],
               ),
-              const SizedBox(height: 20),
-              Text(
-                x(),
-                style: GoogleFonts.poppins(
-                    fontSize: 20, color: Colors.greenAccent, fontWeight: FontWeight.bold),
-              ),
+              const SizedBox(height: 25),
+              ElevatedButton(onPressed: ()=>restartGame()
+              ,style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+              child: Text('Restart',style: GoogleFonts.poppins(color: Colors.white,fontSize: 24),),)
             ],
           ),
         ],
