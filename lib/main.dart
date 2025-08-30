@@ -174,7 +174,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     if (x() == 'DRAW') return _buildWinnerScreen('DRAW');
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Tic Tac Toe')),
+      appBar: AppBar(title: Text('Tic Tac Toe',style: GoogleFonts.poppins(color: Colors.white),),backgroundColor:Colors.black),
       backgroundColor: Colors.grey[900], // make the whole screen dark
       body: Column(
         children: [
